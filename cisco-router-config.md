@@ -107,5 +107,27 @@ no ip route 10.100.0.0 255.255.0.0 GibabitEthernet0/2
 ```
 Dynamic routing
 ```bash
+# go to configuration router mode
+(config-router)# network 
 
+# distributed connected
+redistribute connected [subnets] 
+
+# distribute static
+redistribute static [subnets]
+
+# redistributte with ospf protocol with number inside
+redistribute ospf <instation>
+
+# redistribute rip protocol numbers
+redistribute rip [subnets]
+
+#with ospf use subnets keyword
+#with rip use default-metric 10
+```
+
+
+Show ip protocols routing information 
+```bash
+show ip protocols
 ```
