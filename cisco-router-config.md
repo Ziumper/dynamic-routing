@@ -1,5 +1,16 @@
 # Router commands
 
+Useful commands
+```bash
+#icmp check
+ping <ip address>
+
+#to stop use ctrl+shift+6
+traceroute <ip address>
+
+# show complete routing configuration
+show running-config 
+```
 
 privileged mode
 ```bash
